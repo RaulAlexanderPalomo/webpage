@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estiloContacto.css">
+    <title>¡Contáctame!</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1>¡Contáctame!</h1>
+        <nav class="main-nav">
+            <a href="index.html">Inicio</a>
+        </nav>
+    </header>
+
+    <section class="content-section">
+        <h2>Formulario de Contacto</h2>
+        <form action="mailto:tuemail@example.com" method="post" enctype="text/plain">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label>¿En qué estás interesado?:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="info1" name="interest" value="Prácticas">
+                <label for="info1">Contacto</label>
+
+                <input type="checkbox" id="info2" name="interest" value="Colaboración en proyectos">
+                <label for="info2">Desarrollo Web</label>
+
+                <input type="checkbox" id="info3" name="interest" value="Producto de software">
+                <label for="info3">Colaboración en Proyectos</label>
+
+                <input type="checkbox" id="info4" name="interest" value="Otros">
+                <label for="info4">Otros</label>
+            </div>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetear">
+        </form>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Raúl Alexander Palomo Pech</p>
+        <a href="index.html">Regresar al inicio</a>
+    </footer>
+</body>
+</html>
